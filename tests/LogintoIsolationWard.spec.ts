@@ -1,13 +1,7 @@
 import { chromium, expect } from "@playwright/test";
 import {test} from "@playwright/test";
 
-test("Launching Browser",async() => {
-    const browser = await chromium.launch({
-        headless:false
-    });
-
-    const page = await browser.newPage();
-
+test("Login to OpenMRS",async({page}) => {
     await page.goto('https://demo.openmrs.org/openmrs/login.htm');
 
     await page.fill("//input[@name='username']", "Admin")
@@ -31,6 +25,10 @@ test("Launching Browser",async() => {
 
 
     await page.waitForTimeout(5000);
+    
+    });
 
-    await browser.close();
-})
+
+    
+
+    
