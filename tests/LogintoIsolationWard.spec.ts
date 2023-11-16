@@ -8,6 +8,7 @@ test("Login to OpenMRS",async({page}) => {
     await page.fill("//input[@name='password']", "Admin123")
     await page.click("//li[text() = 'Inpatient Ward']");
     await page.click("//input[@id='loginButton']");
+
     //check element present or not
     await expect(page.locator("text=Logged in as Super User (admin) at Inpatient Ward.")).toHaveCount(1);
   
