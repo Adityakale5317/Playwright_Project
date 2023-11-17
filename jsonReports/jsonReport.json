@@ -47,7 +47,7 @@
         "testDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Playwright_Project",
         "testIgnore": [],
         "testMatch": [
-          "tests/Locators.spec.ts"
+          "tests/Alerts.spec.ts"
         ],
         "timeout": 30000
       }
@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "tests\\Locators.spec.ts",
-      "file": "tests/Locators.spec.ts",
+      "title": "tests\\Alerts.spec.ts",
+      "file": "tests/Alerts.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "",
-          "ok": true,
+          "title": "Alert Enter Name",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,30 +79,64 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 5881,
-                  "errors": [],
-                  "stdout": [],
+                  "status": "failed",
+                  "duration": 5230,
+                  "error": {
+                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('p#demoon')\nExpected string: \u001b[32m\"Thanks for Liking Automatio\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p#demoon')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('p#demoon')\nExpected string: \u001b[32m\"Thanks for Liking Automatio\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p#demoon')\u001b[22m\n\n    at C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts:35:38",
+                    "location": {
+                      "file": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts",
+                      "column": 38,
+                      "line": 35
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Prompt Alert Box\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m     expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#demoon\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Thanks for Liking Automatio\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts",
+                        "column": 38,
+                        "line": 35
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('p#demoon')\nExpected string: \u001b[32m\"Thanks for Liking Automatio\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p#demoon')\u001b[22m\n\n\n\u001b[0m \u001b[90m 33 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Prompt Alert Box\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m     expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#demoon\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Thanks for Liking Automatio\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts:35:38\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Do you like Automation ?\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-16T15:43:59.850Z",
-                  "attachments": []
+                  "startTime": "2023-11-17T16:44:18.310Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\test-results\\tests-Alerts-Alert-Enter-Name\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts",
+                    "column": 38,
+                    "line": 35
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "ac460c4dadd0313cafaa-055f54476214dbdde49e",
-          "file": "tests/Locators.spec.ts",
-          "line": 3,
-          "column": 5
+          "id": "07a5ab0219e608cc8abf-b8663aa46d5c41292ee4",
+          "file": "tests/Alerts.spec.ts",
+          "line": 26,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-16T15:43:58.963Z",
-    "duration": 8210.869999999999
+    "startTime": "2023-11-17T16:44:17.280Z",
+    "duration": 7568.517000000001
   }
 }

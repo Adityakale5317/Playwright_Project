@@ -1,6 +1,6 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 const config:PlaywrightTestConfig = {
-  testMatch:["tests/Locators.spec.ts"],
+  testMatch:["tests/Alerts.spec.ts"],
   use: {
     headless:false,
     screenshot:"only-on-failure"
