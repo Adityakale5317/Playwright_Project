@@ -1,9 +1,9 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\playwright.config.ts",
-    "rootDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Playwright_Project",
+    "configFile": "C:\\Users\\DEVIL'S\\Desktop\\New Project\\Playwright_Project\\playwright.config.ts",
+    "rootDir": "C:/Users/DEVIL'S/Desktop/New Project/Playwright_Project",
     "forbidOnly": false,
-    "fullyParallel": false,
+    "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -34,109 +34,92 @@
     ],
     "reportSlowTests": {
       "max": 5,
-      "threshold": 15000
+      "threshold": 300000
     },
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Playwright_Project/test-results",
+        "outputDir": "C:/Users/DEVIL'S/Desktop/New Project/Playwright_Project/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "",
-        "name": "",
-        "testDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Playwright_Project",
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Chromium",
+        "name": "Chromium",
+        "testDir": "C:/Users/DEVIL'S/Desktop/New Project/Playwright_Project",
         "testIgnore": [],
         "testMatch": [
-          "tests/Alerts.spec.ts"
+          "tests/Alerts.spec.ts",
+          "tests/Checkboxes.spec.ts",
+          "DropdownHandle.spec.ts",
+          "DataDrivenTesting.spec.ts",
+          "RedBus_Interview.spec.ts"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.39.0",
-    "workers": 6,
+    "updateSourceMethod": "3way",
+    "version": "1.51.1",
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\Alerts.spec.ts",
-      "file": "tests/Alerts.spec.ts",
+      "title": "tests\\RedBus_Interview.spec.ts",
+      "file": "tests/RedBus_Interview.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Alert Enter Name",
-          "ok": false,
+          "title": "Bus search on RedBus",
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
+              "projectId": "Chromium",
+              "projectName": "Chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 5230,
-                  "error": {
-                    "message": "\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('p#demoon')\nExpected string: \u001b[32m\"Thanks for Liking Automatio\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p#demoon')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('p#demoon')\nExpected string: \u001b[32m\"Thanks for Liking Automatio\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p#demoon')\u001b[22m\n\n    at C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts:35:38",
-                    "location": {
-                      "file": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts",
-                      "column": 38,
-                      "line": 35
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Prompt Alert Box\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m     expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#demoon\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Thanks for Liking Automatio\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts",
-                        "column": 38,
-                        "line": 35
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('p#demoon')\nExpected string: \u001b[32m\"Thanks for Liking Automatio\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p#demoon')\u001b[22m\n\n\n\u001b[0m \u001b[90m 33 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text = Prompt Alert Box\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m     expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#demoon\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Thanks for Liking Automatio\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts:35:38\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12673,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "Do you like Automation ?\n"
+                      "text": "[]\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-17T16:44:18.310Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\test-results\\tests-Alerts-Alert-Enter-Name\\test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Playwright_Project\\tests\\Alerts.spec.ts",
-                    "column": 38,
-                    "line": 35
-                  }
+                  "startTime": "2025-04-20T09:52:35.654Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "07a5ab0219e608cc8abf-b8663aa46d5c41292ee4",
-          "file": "tests/Alerts.spec.ts",
-          "line": 26,
-          "column": 6
+          "id": "b8f4c6fa090cb9070d45-4b87a9e62fdf9a619c5f",
+          "file": "tests/RedBus_Interview.spec.ts",
+          "line": 6,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-17T16:44:17.280Z",
-    "duration": 7568.517000000001
+    "startTime": "2025-04-20T09:52:32.753Z",
+    "duration": 16748.36400000006,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
   }
 }
